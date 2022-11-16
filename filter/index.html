@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="sortBtn">
+            <button class="btn" id="all" onclick="filter(this.id)" value="all">All</button>
+            <button class="btn" id="cakes" onclick="filter(this.id)" value="cakes">cakes</button>
+            <button class="btn" id="pancake" onclick="filter(this.id)" value="pancake">pancake</button>
+            <button class="btn" id="chocolate" onclick="filter(this.id)" value="chocolate">chocolate</button>
+        </div>
+    </div>
+    <div class="itemsList" id="itemsList">
+            <div class="cakesList">
+                <div class="card">
+                    <img src="https://source.unsplash.com/6iqpLKqeaE0" alt="">
+                    <div class="cake-title">Cake 1</div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/QNyRp21hb5I" alt="">
+                    <div class="cake-title">Cake 2</div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/T5KPTbbK-_E" alt="">
+                    <div class="cake-title">Cake 3</div>
+                </div>
+        </div>
+        <div class="pancakesList">
+            all pancakes
+        </div>
+        <div class="chocolateList">
+            all chocolates
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

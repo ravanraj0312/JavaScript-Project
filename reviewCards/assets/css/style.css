@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.container{
+    display: flex;
+    height: 100%;
+    background: #F1F5F8;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.title{
+    position: relative;
+    letter-spacing:2.3px;
+    z-index: 1111 !important;
+    margin: 20px;
+}
+.title ::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background: rgb(0, 204, 255);
+    padding: 2px;
+    width: 100%;
+}
+
+.card-container{
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356);
+    padding:30px;
+}
+.card-img{
+    z-index: 11111;
+    width: 100px;
+    margin-bottom: 30px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    display:inline-block;
+    vertical-align:middle;
+    position: relative;
+    box-shadow: 7px -4px rgba(0, 204, 255, 0.493);
+}
+.card-img img{
+    width: 100%;
+}
+.card-img::before{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    background: red;
+    content: '';
+}
+.card-body h4{
+    margin: 10px;
+    font-size: 2.2rem;
+}
+.card-body h5{
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: rgba(10, 65, 80, 0.493);
+}
+.card-body p{
+    margin-bottom: 12px;
+    color: grey;
+}
+.button-group{
+    margin: 10px;
+}
+.left,.right{
+    border: none;
+    background: none;
+    font-size: 1.7rem;
+    margin: 10px;
+    color: rgb(12, 129, 129);
+    cursor: pointer;
+}
+.btn-surprise{
+    background: rgb(12, 129, 129) ;
+    padding: 7px 10px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.card{
+ display: none;
+}

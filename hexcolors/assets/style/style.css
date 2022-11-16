@@ -1,0 +1,27 @@
+body{
+    /* display: flex; */
+    height: 100vh;
+    background: #00b7ff;    
+    overflow: hidden;
+}
+.color-container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#gen_color{
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #fff;
+    background: rgb(255, 0, 140);
+}
+#gen_color:active{
+    background: red;
+}

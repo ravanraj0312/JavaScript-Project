@@ -1,0 +1,35 @@
+body {
+  background: #dddecf;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.cakesList {
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+text-align: center;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+}
+.card img {
+    width: 250px;
+    border-radius: 50px;
+    transition: width 0.5s ease;
+}
+.card img:hover{
+    width:280px;
+}
